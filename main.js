@@ -8,7 +8,7 @@ let channelNames = ['马大哈动画', '神戳戳的苏神', '游戏解说艾登
        '在下大沙雕', '暴走三金_', '猫小八动画', '芦苇草的梦想'
       ];
 function updateChannelNames() {
-  fetch('https://gist.github.com/diyism/3b35aa863410b0a5e3cdf7bdd2c0c32b/raw/ad2b4f43f312974438f737348971e2771872855f/filter_youtube_channels.json')
+  fetch('https://raw.githubusercontent.com/diyism/realtime_javascript_addon/main/filter.json')
     .then(response => {
       // 确保服务器响应成功
       if (!response.ok) {
