@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "realtime_javascript_addon",
+  "version": "1.0",
+  "homepage_url": "https://github.com/diyism/realtime_javascript_addon",
+  "description": "realtime javascript addon",
+  "icons": {"48": "beasts-48.png"},
+  "permissions": ["activeTab"],
+  "content_scripts": [{"matches": ["*://*.youtube.com/*"], "js": ["main.js"]}],
+  "browser_action": {"default_popup": "popup/choose_beast.html"}
+}
